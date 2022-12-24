@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="greeting.js" defer></script>
+    <script src="clock.js" defer></script>
     <title>Momentum App</title>
   </head>
   <body>
-    <div class="flex">
-      <div class="a">
-        <div class="b"></div>
-      </div>
-    </div>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
   </body>
 </html>

@@ -1,3 +1,81 @@
+* {
+  margin: 0;
+  color: #fff;
+}
+
 .hidden {
   display: none;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  width: 400px;
+  height: 32px;
+  margin: 20px 0;
+}
+
+input[type="submit"] {
+  background-color: black;
+  height: 32px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+#background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+#background::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+}
+
+#clock {
+  position: relative;
+  font-size: 120px;
+}
+
+#greeting {
+  position: relative;
+}
+
+#login-form {
+  position: relative;
+}
+
+#todo-form {
+  position: relative;
+}
+
+#todo-list {
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  font-size: 18px;
+  bottom: 16px;
+}
+
+#weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

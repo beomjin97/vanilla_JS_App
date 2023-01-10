@@ -27,8 +27,8 @@ function paintTodo(newTodoObj) {
 
   const button = document.createElement("button");
   button.innerText = "delete";
-  button.style.backgroundColor = "white";
-  button.style.color = "black";
+  button.style.borderColor = "#fff";
+  button.style.backgroundColor = "transparent";
   button.style.marginLeft = "12px";
   button.addEventListener("click", deleteTodo);
   li.appendChild(button);
